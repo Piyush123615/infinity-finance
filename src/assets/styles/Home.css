@@ -1,0 +1,107 @@
+
+    
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  height: 60px; 
+}
+
+.navbar-logo {
+  font-size: 0;
+  color: #fff;
+  font-weight: bold;
+  background-image: url('../logo/InfinityFinance_logo.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; 
+  max-width: 150px; 
+  height: 130%; 
+  display: block; 
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+  
+  .service-overview {
+    padding: 40px 20px;
+    background: #6f87a0;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    flex: 1;
+    margin: 15px;
+    padding: 20px;
+    background: #996464;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  
+
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+  
