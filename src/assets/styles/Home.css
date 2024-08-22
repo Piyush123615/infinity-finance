@@ -14,7 +14,7 @@
   font-size: 0;
   color: #fff;
   font-weight: bold;
-  background-image: url('../logo/InfinityFinance_logo.jpg'); 
+  background-image: url('../logo/InfinityFinance_logo.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,7 +27,7 @@
 .navbar-nav {
   display: flex;
   gap: 20px; 
-  align-items: center;
+flex-direction: row;
 }
 
 .navbar-link {
