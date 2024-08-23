@@ -1,6 +1,4 @@
 
-    
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -20,14 +18,18 @@
   background-position: center;
   width: 100%; 
   max-width: 150px; 
-  height: 130%; 
+  height: 150%; 
   display: block; 
+  margin-left: 10px;
 }
 
 .navbar-nav {
   display: flex;
+  
   gap: 20px; 
+
 flex-direction: row;
+
 }
 
 .navbar-link {

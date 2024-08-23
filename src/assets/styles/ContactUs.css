@@ -1,0 +1,42 @@
+
+.contact-us-container {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(190, 165, 165, 0.1);
+    height: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    
+  }
+  
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  .contact-item {
+    text-align: center;
+  }
+  
+  .social-media {
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icons a {
+    color: blue;
+    font-size: 24px;
+   
+  }
+  .contact-item i{
+    color:blue
+  }
+  
+  
+  
