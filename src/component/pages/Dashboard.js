@@ -15,9 +15,9 @@ const Dashboard = () => {
   return (
     <div className="homepage">
       <Header/>
-      <HeroSection/>
+      {/* <HeroSection/>
       <ServiceOverview/>
-      <Testimonials/>
+      <Testimonials/> */}
       <Footer/>
       <AboutUs/>
       {/* <LoginPage/> */}
