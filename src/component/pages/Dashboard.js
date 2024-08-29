@@ -5,7 +5,7 @@ import ServiceOverview from './ServiceOverview';
 import Testimonials from '../navigation/Testimonal';
 import Header from '../navigation/Header';
 import Footer from '../navigation/Footer';
-import ContactUs from './ContactUs';
+
 
 const Dashboard = () => {
   return (
@@ -15,7 +15,7 @@ const Dashboard = () => {
       <ServiceOverview/>
       <Testimonials/>
       <Footer/>
-      <ContactUs/> 
+      
     </div>
   );
 };
