@@ -1,21 +1,25 @@
 
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 import Dashboard from './component/pages/Dashboard';
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
+
+
+import Visitor from './component/pages/Visitor';
+import EmpDashboardHome from './component/pages/EmpDashboardHome';
+
 
 
 function App() {
   return <div>
 
-    
-
     <BrowserRouter>
-    <Dashboard/>
+      <Routes>
+        <Route path='/*' element={<Visitor/>}/>
+        <Route path='/dash/*' element={<EmpDashboardHome/>}/>
+      </Routes>
     </BrowserRouter>
     
 

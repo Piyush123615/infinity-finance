@@ -7,6 +7,7 @@ const Header = () => {
     <header className="navbar">
       <div className="navbar-logo">Infinity Finance</div>
       <nav className="navbar-nav">
+
         <Link to="/" className="navbar-link">Home</Link>
         <Link to="/aboutus" className="navbar-link text-white">Aboutus</Link>
         <Link to="/enquiry" className="navbar-link">Enquiry</Link>
@@ -23,6 +24,7 @@ const Header = () => {
              
         </Link>
         <Link to="/contact" className="navbar-link">Contact Us</Link>
+        <Link to="/" className="navbar-link">Sign-Out</Link>
       </nav>
     </header>
   );

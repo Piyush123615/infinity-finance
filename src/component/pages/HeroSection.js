@@ -4,12 +4,14 @@ import { Carousel } from 'react-bootstrap';
 function ImageCarousel() {
   return (
     <Carousel>
+
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=First+Slide"
+          src='../'
           alt="First slide"
         />
+
         <Carousel.Caption>
           <h3>First Slide Label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -19,7 +21,7 @@ function ImageCarousel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Second+Slide"
+          src='../'
           alt="Second slide"
         />
         <Carousel.Caption>
