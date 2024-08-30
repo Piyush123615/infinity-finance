@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-function EnrolledEnquiry() {
+function CheckCibil() {
   const [employeeList, setEmployeeList] = useState([]);
 
   useEffect(() => {
@@ -16,11 +16,12 @@ function EnrolledEnquiry() {
   const handleCheckCIBIL = (employeeId) => {
     // Handle the check CIBIL action here
     console.log(`Checking CIBIL for employee ID: ${employeeId}`);
-    axios.patch(`http://localhost:8088/enq/update_enq_status/${employeeId}/FORWARD_TO_OE`).then(
+    axios.put(`http://localhost:8088/enq/add_cibil/${employeeId}`).then(
       res=>{
         if(res.status===200)
         {
-          alert(`Cibil checking forwarded to OE for id ${employeeId}`)
+          alert(`Cibil added successfullt for enquiry id ${employeeId}`);
+          window.location.reload();
         }
         else
         {
@@ -48,6 +49,8 @@ function EnrolledEnquiry() {
               <th>Aadhar Card Number</th>
               <th>Gender</th>
               <th>Enquiry Status</th>
+              <th>Cibil Score</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -64,7 +67,14 @@ function EnrolledEnquiry() {
                 <td>{employee.gender}</td>
                 <td>{employee.status}</td>
                 <td>
-                  {employee.status === 'IN_PROGRESS' && (
+                {employee.status === 'APPROVED' ? (
+                    employee.cibil.cibilscore // Assuming the CIBIL score is a property in employee
+                  ) : (
+                    <span>N/A</span> // Or any placeholder if score is not available
+                  )}
+                </td>
+                <td>
+                  {employee.status !== 'APPROVED' && (
                     <button
                       className="btn btn-primary"
                       onClick={() => handleCheckCIBIL(employee.enquiryID)} // Assume `employee.id` is unique
@@ -84,4 +94,4 @@ function EnrolledEnquiry() {
   );
 }
 
-export default EnrolledEnquiry;
+export default CheckCibil;

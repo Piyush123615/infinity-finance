@@ -9,6 +9,8 @@ import RejectedEnquiry from '../dashadminactions/crm-actions/RejectedEnquiry';
 import LoanApplications from '../dashadminactions/crm-actions/LoanApplications';
 import AppStatistics from '../dashadminactions/admin-actions/AppStatistics';
 import Header from '../navigation/Header';
+import CheckCibil from '../dashadminactions/oe-actions/CheckCibil';
+import UnderWriting from '../dashadminactions/oe-actions/UnderWriting';
 
 function EmpDashboardHome() {
 
@@ -49,6 +51,9 @@ function EmpDashboardHome() {
                 <Route path='approved-enquiry' element={<ApprovedEnquiry/>} />
                 <Route path='Rejected-Enquiry' element={<RejectedEnquiry/>} />
                 <Route path='loan-application' element={<LoanApplications/>} /> 
+
+                <Route path='check-cibil' element={<CheckCibil/>} />
+                <Route path='under-writing' element={<UnderWriting/>} />
            </Routes>
         </div>
       </div>

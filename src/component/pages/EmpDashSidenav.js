@@ -17,6 +17,10 @@ function EmpDashSidenav() {
                 {label:'Rejected Enquiry' , path:'Rejected-Enquiry'},
                 {label:'Loan Applications' , path:'loan-applications'}
 
+            ],
+            "OE":[
+               {label:'Check Cibil', path:'check-cibil'},
+               {label:'Under Writing', path:'under-writing'}
             ]
          }
     ]

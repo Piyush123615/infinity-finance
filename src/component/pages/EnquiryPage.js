@@ -83,13 +83,13 @@ function EnquiryPage() {
         <option value="Other">Other</option>
       </select>
 
-      <label>Status:</label>
+      {/* <label>Status:</label>
       <select className='form-control mb-2' {...register('status', { required: true })}>
         <option value="IN_PROGRESS">In-Progress</option>
         <option value="CLOSED">Closed</option>
         <option value="APPROVED">Approved</option>
         <option value="REJECTED">Rejected</option>
-      </select>
+      </select> */}
 
       <button type='submit' className='btn btn-primary mt-3'>Submit</button>
     </form>
