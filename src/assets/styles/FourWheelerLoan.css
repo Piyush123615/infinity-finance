@@ -1,0 +1,20 @@
+
+.FWLoan-Container{
+   
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px solid;
+    box-shadow: 0 4px 8px rgb(190, 165, 165, 0.1);
+    height: 100%;
+    margin-left: 20px;
+  }
+  h1{
+    text-align: center;
+    color: black;
+  }
+  .image{
+    background-image: url(../../assets/images/wallcar.jpg);
+    height: 100px;
+    width: 100%;
+    
+  }

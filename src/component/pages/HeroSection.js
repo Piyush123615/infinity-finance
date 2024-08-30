@@ -1,46 +1,63 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import img1 from '../../assets/herosection/hsh.jpg'
+import img2 from '../../assets/herosection/taigun.jpg'
+import img3 from '../../assets/herosection/yamaha.jpg'
+import img4 from '../../assets/herosection/businessloan.jpg'
+import '../../assets/styles/Home.css'
+
 
 function ImageCarousel() {
   return (
-    <Carousel>
+    <Carousel id='carousel'>
+
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src='../'
+          className="d-block w-100%"
+          src={img1}
           alt="First slide"
         />
-
         <Carousel.Caption>
-          <h3>First Slide Label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className='text-dark'>Dream Big, Pay Less :- Competitive rates to make your dream home a reality.</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src='../'
+          className="d-block w-100%"
+          src={img2}
           alt="Second slide"
         />
         <Carousel.Caption>
-          <h3>Second Slide Label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3 className='text-dark'>New Car, No Worries :- Simple car loan process and great rates.</h3>
         </Carousel.Caption>
       </Carousel.Item>
 
+      
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/800x400?text=Third+Slide"
+          className="d-block w-100%"
+          src={img3}
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Third Slide Label</h3>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <h3 className='text-danger'>Ride Your Dream Bike :- Affordable two-wheeler loans for every rider.</h3>
         </Carousel.Caption>
       </Carousel.Item>
+
+      
+      <Carousel.Item>
+        <img
+          className="d-block w-100%"
+          src={img4}
+          alt="Fourth slide"
+        />
+        <Carousel.Caption>
+          <h3 className='text-danger'>Your Business, Our Support :- Fast and flexible business loans to fuel your success. </h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+
     </Carousel>
   );
 }
