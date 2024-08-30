@@ -1,4 +1,6 @@
 
+    
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -18,18 +20,14 @@
   background-position: center;
   width: 100%; 
   max-width: 150px; 
-  height: 150%; 
+  height: 130%; 
   display: block; 
-  margin-left: 10px;
 }
 
 .navbar-nav {
   display: flex;
-  
   gap: 20px; 
-
 flex-direction: row;
-
 }
 
 .navbar-link {
@@ -107,15 +105,31 @@ flex-direction: row;
 }
 
 .aboutus{
-  background-image: url('../aboutus/office.jpg');
+  background-image: url('../aboutus/padrinan-2249527.jpg');
   border: 10px solid sandybrown;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  height: 150vh;
+  height: 130vh;
 }
 
 .aboutus h1{
   text-align: center;
-  color: brown;
+  color: grey;
   font-size: 80px;
 }
+
+
+.aboutus p{
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+
+
+
+#carousel{
+  height: 100%;
+  /* width: 1200px; */
+  
+}
+
