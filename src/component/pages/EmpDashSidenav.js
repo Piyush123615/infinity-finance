@@ -15,7 +15,7 @@ function EmpDashSidenav() {
                 {label:'Enrolled Enquiry' ,path:'enrolled-enquiry'},
                 {label:'Approved Enquiry' ,path:'approved-enquiry'},
                 {label:'Rejected Enquiry' , path:'Rejected-Enquiry'},
-                {label:'Loan Applications' , path:'loan-applications'}
+                
 
             ],
             "OE":[
