@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function ApprovedEnquiry() {
   const [employeeList, setEmployeeList] = useState([]);
@@ -32,6 +33,7 @@ function ApprovedEnquiry() {
               <th>Aadhar Card Number</th>
               <th>Gender</th>
               <th>Enquiry Status</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -46,6 +48,9 @@ function ApprovedEnquiry() {
                 <td>{employee.adharcardno}</td>
                 <td>{employee.gender}</td>
                 <td>{employee.status}</td>
+                <td>
+                  <Link class="btn btn-primary" to={`/dash/loan-application/${employee.enquiryID}`}>Apply Loan</Link>
+                </td>
               </tr>
             ))}
           </tbody>

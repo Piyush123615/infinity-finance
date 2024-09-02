@@ -50,7 +50,7 @@ function EmpDashboardHome() {
                 <Route path='enrolled-enquiry' element={<EnrolledEnquiry/>} />
                 <Route path='approved-enquiry' element={<ApprovedEnquiry/>} />
                 <Route path='Rejected-Enquiry' element={<RejectedEnquiry/>} />
-                <Route path='loan-application' element={<LoanApplications/>} /> 
+                <Route path='loan-application/:enquiry_id' element={<LoanApplications/>} /> 
 
                 <Route path='check-cibil' element={<CheckCibil/>} />
                 <Route path='under-writing' element={<UnderWriting/>} />
